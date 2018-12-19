@@ -27,7 +27,12 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/particles/particles.min.js",
+              "src/assets/particles/app.js",
+              "src/assets/typer/typer.js",
+              "src/js/main.js"
             ]
           },
           "configurations": {

@@ -1,0 +1,21 @@
+.fab {
+    color: #212121;
+}
+.s-google {
+	width: 20% !important;
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.s-google {
+		width: 50% !important;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.s-google {
+		width: 35% !important;
+	}
+}

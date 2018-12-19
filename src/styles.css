@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'product_sans';
+    src: url('/assets/fonts/product_sans_regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'product_sans';
+    height: 100vh;
+}
+#particles-js {
+    height: 100%;
+    width: 100%;
+	background-color: #fafafa;
+}
+
+#main-content {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+	position: absolute;
+}
