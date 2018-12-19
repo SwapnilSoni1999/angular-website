@@ -43,7 +43,7 @@ export class PortfolioComponent implements OnInit {
       cursorChar: "|",
       loop: true
     }
-
+    // @ts-ignore
     let typed = new Typed(".typed", options); 
 
   }
