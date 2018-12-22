@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<ul class="list-group">
+				<app-folder *ngFor="let rum of displayData; let i=index" [id]="i">{{ rum }}</app-folder>
+			</ul>
+		</div>
+	</div>
+</div>

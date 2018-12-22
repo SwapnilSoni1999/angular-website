@@ -1,0 +1,38 @@
+{
+    "romName":[
+        "LineageOS", "BlissROMs", "PixelExperience", "CosmicOS"
+    ],
+    "romNameID": [
+        "lin","blis","pe","cos"
+    ],
+    "romPath":[
+        "./lineage", "./bliss"
+    ],
+    "deviceName":[
+        "mido", "santoni"
+    ],
+    "devicePath":[
+        "./mido","./santoni"
+    ],
+    "build":[
+        [
+            [
+                "lineage1-mido","lineage2-mido"
+            ],
+            [
+                "bliss1-mido", "bliss2-mido"
+            ]
+        ],
+
+
+
+        [
+            [
+                "lineage1-santoni", "lineage2-santoni"
+            ],
+            [
+                "bliss1-santoni","bliss2-santoni"
+            ]
+        ]
+    ]
+}

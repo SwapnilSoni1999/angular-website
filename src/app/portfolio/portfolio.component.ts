@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import * as Typed  from 'typed.js';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,9 +13,14 @@ import * as Typed  from 'typed.js';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) {
+  }
   
   ngOnInit() {
+    if(this._router.url == '/') {
+      $('.particles-js-canvas-el').css("visibility", "visible");
+    }
+
     $(document).ready(function() {
       var trackClass;
       $(".social").hover(function (e) {
@@ -33,6 +39,10 @@ export class PortfolioComponent implements OnInit {
 
         return classes[randomNumber];
       }
+
+      if(this.router == '/') {
+        $('.particles-js-canvas-el').css("visibility", "visible");
+      }
     });
 
     let options = {
@@ -44,7 +54,7 @@ export class PortfolioComponent implements OnInit {
       loop: true
     }
     // @ts-ignore
-    let typed = new Typed(".typed", options); 
+    let typed = new Typed(".typed", options);
 
   }
 

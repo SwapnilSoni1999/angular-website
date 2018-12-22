@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-
+import * as $ from 'jquery';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,9 +10,12 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 export class FooterComponent implements OnInit {
   faHeart = faHeart;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    if(this.router.url == '/footer') {
+      $('.particles-js-canvas-el').remove();
+    }
   }
 
 }
