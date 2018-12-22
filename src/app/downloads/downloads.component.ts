@@ -12,7 +12,6 @@ import { RomService } from './rom.service';
 export class DownloadsComponent implements OnInit {
 
   private romData: Object;
-  private displayData: Array<any>;
   
 
   constructor(private http: HttpClient, private route: Router,private rom:RomService) { }
@@ -26,6 +25,10 @@ export class DownloadsComponent implements OnInit {
     });
   }
   
+  hack(val) {
+    return Array.from(val);
+  }
+
 
   ngOnInit() {
     if (this.route.url == '/downloads') {
