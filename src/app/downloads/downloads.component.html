@@ -2,7 +2,11 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<ul class="list-group">
-				<app-folder *ngFor="let rum of displayData; let i=index" [id]="i">{{ rum }}</app-folder>
+				<div *ngFor="let lenk of romData; let i=index">
+					<a [routerLink]="lenk.path">
+						<app-folder [id]="i">{{ lenk.romName }}</app-folder>
+					</a>
+				</div>
 			</ul>
 		</div>
 	</div>

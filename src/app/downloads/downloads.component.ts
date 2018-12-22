@@ -1,44 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { RomService } from './rom.service';
 
 @Component({
   selector: 'app-downloads',
   templateUrl: './downloads.component.html',
-  styleUrls: ['./downloads.component.css']
+  styleUrls: ['./downloads.component.css'],
+  providers: [ RomService ]
 })
 export class DownloadsComponent implements OnInit {
 
-  private romObj: Object;
+  private romData: Object;
   private displayData: Array<any>;
+  
 
-  constructor(private http: HttpClient, private route: Router) { }
+  constructor(private http: HttpClient, private route: Router,private rom:RomService) { }
 
-  parseJson() {
-    console.log(this.getJSON());
-  }
-  public getJSON() {
-    this.http.get('/assets/rom.json').pipe(map(data => {
-      this.romObj = data;
+  setRomFolder() {
+    this.romData = this.rom.getJSON().subscribe(data => {
+      this.romData = data;
       // @ts-ignore
-      let folLength = this.romObj.romName.length;
-      // @ts-ignore
-      this.displayData = this.romObj.romName;
-    })).subscribe(result => {
+      // this.displayData = this.romData.romName;
+      console.log(this.romData);
     });
   }
-
-  getFolId(index: number) {
-    console.log(index);
-  }
+  
 
   ngOnInit() {
-    this.parseJson();
     if (this.route.url == '/downloads') {
       let bg = document.querySelector('.particles-js-canvas-el') as HTMLElement;
       bg.style.visibility = 'hidden';
     }
+    this.syncFn();
+  }
+  async syncFn() {
+    await this.setRomFolder();
   }
 
 }
