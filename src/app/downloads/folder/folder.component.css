@@ -1,7 +1,4 @@
-a {
-    color: #212121;
-    text-decoration: none;
-}
+
 
 .list-group-item .fol-name {
 	padding-left: 25px;
@@ -17,9 +14,3 @@ a {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-@media only screen 
-and (max-device-width : 375px) {
-  .fol-date {
-    display:none;
-  }
-}

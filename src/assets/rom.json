@@ -1,70 +1,62 @@
-{
-    "roms": [
-        {
-            "romName": "LineageOS",
-            "path": "lineage",
-            "deviceData": [
-                {
-                    "name": "mido",
-                    "path": "./mido",
-                    "builds": [
-                        "lineage1-mido",
-                        "lineage2-mido"
-                    ]
-                },
-                {
-                    "name": "santoni",
-                    "path": "./santoni",
-                    "builds": [
-                        "lineage1-santoni",
-                        "lineage2-santoni"
-                    ]
-                }
-            ]
-        },
-        {
-            "romName": "BlissROMs",
-            "path": "bliss",
-            "deviceData": [
-                {
-                    "name": "mido",
-                    "path": "./mido",
-                    "builds": [
-                        "bliss1-mido",
-                        "bliss2-mido"
-                    ]
-                },
-                {
-                    "name": "santoni",
-                    "path": "./santoni",
-                    "builds": [
-                        "bliss1-santoni",
-                        "bliss2-santoni"
-                    ]
-                }
-            ]
-        },
-        {
-            "romName": "PixelExperience",
-            "path": "pe",
-            "deviceData": [
-                {
-                    "name": "mido",
-                    "path": "./mido",
-                    "builds": [
-                        "pe1-mido",
-                        "pe2-mido"
-                    ]
-                },
-                {
-                    "name": "santoni",
-                    "path": "./santoni",
-                    "builds": [
-                        "pe1-santoni",
-                        "pe2-santoni"
-                    ]
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "romName": "LineageOS",
+        "path": "lineage",
+        "deviceData": [
+            {
+                "name": "mido",
+                "builds": [
+                    "lineage1-mido",
+                    "lineage2-mido"
+                ]
+            }
+        ]
+    },
+    {
+        "romName": "BlissROMs",
+        "path": "bliss",
+        "deviceData": [
+            {
+                "name": "mido",
+                "builds": [
+                    "bliss1-mido",
+                    "bliss2-mido"
+                ]
+            },
+            {
+                "name": "santoni",
+                "builds": [
+                    "bliss1-santoni",
+                    "bliss2-santoni"
+                ]
+            },
+            {
+                "name": "falcon",
+                "builds": [
+                    "bliss1-falcon",
+                    "bliss2-falcon"
+                ]
+            }
+        ]
+    },
+    {
+        "romName": "PixelExperience",
+        "path": "pe",
+        "deviceData": [
+            {
+                "name": "mido",
+                "builds": [
+                    "pe1-mido",
+                    "pe2-mido"
+                ]
+            },
+            {
+                "name": "santoni",
+                "builds": [
+                    "pe1-santoni",
+                    "pe2-santoni"
+                ]
+            }
+        ]
+    }
+]

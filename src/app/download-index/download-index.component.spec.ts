@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LineageComponent } from './lineage.component';
+import { DownloadIndexComponent } from './download-index.component';
 
-describe('LineageComponent', () => {
-  let component: LineageComponent;
-  let fixture: ComponentFixture<LineageComponent>;
+describe('DownloadIndexComponent', () => {
+  let component: DownloadIndexComponent;
+  let fixture: ComponentFixture<DownloadIndexComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LineageComponent ]
+      declarations: [ DownloadIndexComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LineageComponent);
+    fixture = TestBed.createComponent(DownloadIndexComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

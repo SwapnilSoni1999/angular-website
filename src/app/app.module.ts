@@ -11,7 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { FolderComponent } from './downloads/folder/folder.component';
-import { LineageComponent } from './downloads/lineage/lineage.component';
+import { DownloadIndexComponent } from './download-index/download-index.component';
+import { DeviceComponent } from './downloads/device/device.component';
+import { DeviceIndexComponent } from './device-index/device-index.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { LineageComponent } from './downloads/lineage/lineage.component';
     PortfolioComponent,
     DownloadsComponent,
     FolderComponent,
-    LineageComponent
+    DownloadIndexComponent,
+    DeviceComponent,
+    DeviceIndexComponent
   ],
   imports: [
     BrowserModule,

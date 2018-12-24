@@ -11,34 +11,35 @@ import { RomService } from './rom.service';
 })
 export class DownloadsComponent implements OnInit {
 
-  private romData: Object;
+  private romData: Array<any>;
   
 
-  constructor(private http: HttpClient, private route: Router,private rom:RomService) { }
+  constructor(private http: HttpClient, private route: Router, private rom: RomService) { }
+
+  printPath(ele: String) {
+    console.log(ele);
+    // @ts-ignore
+    for(let i=0; i<=this.romData.length; i++) {
+      if(ele == this.romData[i].path) {
+        console.log("matched at:",i);
+      }
+    }
+  }
 
   setRomFolder() {
-    this.romData = this.rom.getJSON().subscribe(data => {
+    this.rom.getJSON().subscribe((data: Array<any>) => {
       this.romData = data;
-      // @ts-ignore
-      // this.displayData = this.romData.romName;
       console.log(this.romData);
     });
-  }
-  
-  hack(val) {
-    return Array.from(val);
   }
 
 
   ngOnInit() {
-    if (this.route.url == '/downloads') {
-      let bg = document.querySelector('.particles-js-canvas-el') as HTMLElement;
+    if (this.route.url === '/downloads') {
+      const bg = document.querySelector('.particles-js-canvas-el') as HTMLElement;
       bg.style.visibility = 'hidden';
     }
-    this.syncFn();
-  }
-  async syncFn() {
-    await this.setRomFolder();
+    this.setRomFolder();
   }
 
 }
