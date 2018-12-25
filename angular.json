@@ -30,7 +30,8 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/particles/particles.min.js",
-              "src/assets/particles/app.js"
+              "src/assets/particles/app.js",
+              "node_modules/analytics.js"
             ]
           },
           "configurations": {
