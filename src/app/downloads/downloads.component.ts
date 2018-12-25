@@ -11,7 +11,7 @@ import { RomService } from './rom.service';
 })
 export class DownloadsComponent implements OnInit {
 
-  private romData: Array<any>;
+  romData: Array<any>;
   
 
   constructor(private http: HttpClient, private route: Router, private rom: RomService) { }
@@ -20,6 +20,7 @@ export class DownloadsComponent implements OnInit {
     console.log(ele);
     // @ts-ignore
     for(let i=0; i<=this.romData.length; i++) {
+      // @ts-ignore
       if(ele == this.romData[i].path) {
         console.log("matched at:",i);
       }
@@ -35,7 +36,7 @@ export class DownloadsComponent implements OnInit {
 
 
   ngOnInit() {
-    if (this.route.url === '/downloads') {
+    if (this.route.url) {
       const bg = document.querySelector('.particles-js-canvas-el') as HTMLElement;
       bg.style.visibility = 'hidden';
     }

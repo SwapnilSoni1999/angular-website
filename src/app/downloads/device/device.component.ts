@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   providers: [ RomService ]
 })
 export class DeviceComponent implements OnInit {
-  private romData: Array<any>;
+  romData: Array<any>;
 
   constructor(private rom: RomService, private http: HttpClient, private router: Router) { }
 

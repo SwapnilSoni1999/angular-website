@@ -11,9 +11,10 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { FolderComponent } from './downloads/folder/folder.component';
-import { DownloadIndexComponent } from './download-index/download-index.component';
+
 import { DeviceComponent } from './downloads/device/device.component';
 import { DeviceIndexComponent } from './device-index/device-index.component';
+import { DownloadIndexComponent } from './download-index/download-index.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,8 @@ import { DeviceIndexComponent } from './device-index/device-index.component';
     PortfolioComponent,
     DownloadsComponent,
     FolderComponent,
-    DownloadIndexComponent,
     DeviceComponent,
+    DownloadIndexComponent,
     DeviceIndexComponent
   ],
   imports: [
