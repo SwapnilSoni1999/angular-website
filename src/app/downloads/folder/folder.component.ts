@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-folder',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./folder.component.css'],
 })
 export class FolderComponent implements OnInit {
+
+  @Output() foldur: boolean;
+  @Output() phile: boolean;
 
   constructor() { }
 

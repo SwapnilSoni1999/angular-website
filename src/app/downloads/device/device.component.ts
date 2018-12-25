@@ -23,7 +23,7 @@ export class DeviceComponent implements OnInit {
       console.log(this.romData);
       let chek;
       // @ts-ignore
-      for (let i = 0; i <= this.romData.length; i++) {
+      for (let i = 0; i < this.romData.length; i++) {
         chek = this.romData[i].path;
         if (aidi == chek) {
           console.log("matched at:", i);

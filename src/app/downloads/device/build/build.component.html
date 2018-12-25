@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<ul class="list-group" *ngIf="romData">
+				<div *ngFor="let lenk of romData; let i=index">
+					<a [href]="lenk.url">
+						<app-file [id]="i">{{ lenk.name }}</app-file>
+					</a>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>

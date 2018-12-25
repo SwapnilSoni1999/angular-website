@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { RomService } from './rom.service';
@@ -12,14 +12,14 @@ import { RomService } from './rom.service';
 export class DownloadsComponent implements OnInit {
 
   romData: Array<any>;
-  
+  @Input() foldur: boolean;
 
   constructor(private http: HttpClient, private route: Router, private rom: RomService) { }
 
   printPath(ele: String) {
     console.log(ele);
     // @ts-ignore
-    for(let i=0; i<=this.romData.length; i++) {
+    for(let i=0; i<this.romData.length; i++) {
       // @ts-ignore
       if(ele == this.romData[i].path) {
         console.log("matched at:",i);

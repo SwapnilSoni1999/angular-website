@@ -3,7 +3,7 @@
     <div class="col-lg-12">
       <ul class="list-group" *ngIf="romData">
         <div *ngFor="let lenk of romData; let i=index">
-          <a [routerLink]="lenk.name" (click)="printPath(lenk.name)">
+          <a [routerLink]="lenk.name">
             <app-folder [id]="lenk.name">{{ lenk.name }}</app-folder>
           </a>
         </div>

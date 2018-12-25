@@ -15,6 +15,9 @@ import { FolderComponent } from './downloads/folder/folder.component';
 import { DeviceComponent } from './downloads/device/device.component';
 import { DeviceIndexComponent } from './device-index/device-index.component';
 import { DownloadIndexComponent } from './download-index/download-index.component';
+import { BuildComponent } from './downloads/device/build/build.component';
+import { BuildIndexComponent } from './build-index/build-index.component';
+import { FileComponent } from './downloads/file/file.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { DownloadIndexComponent } from './download-index/download-index.componen
     FolderComponent,
     DeviceComponent,
     DownloadIndexComponent,
-    DeviceIndexComponent
+    DeviceIndexComponent,
+    BuildComponent,
+    BuildIndexComponent,
+    FileComponent,
   ],
   imports: [
     BrowserModule,

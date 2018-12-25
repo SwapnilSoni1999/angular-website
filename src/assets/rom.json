@@ -6,8 +6,14 @@
             {
                 "name": "mido",
                 "builds": [
-                    "lineage1-mido",
-                    "lineage2-mido"
+                    {
+                        "name": "lineage1-mido",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "lineage2-mido",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             }
         ]
@@ -19,22 +25,40 @@
             {
                 "name": "mido",
                 "builds": [
-                    "bliss1-mido",
-                    "bliss2-mido"
+                    {
+                        "name": "bliss1-mido",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "bliss2-mido",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             },
             {
                 "name": "santoni",
                 "builds": [
-                    "bliss1-santoni",
-                    "bliss2-santoni"
+                    {
+                        "name": "bliss1-santoni",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "bliss2-santoni",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             },
             {
                 "name": "falcon",
                 "builds": [
-                    "bliss1-falcon",
-                    "bliss2-falcon"
+                    {
+                        "name": "bliss1-falcon",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "bliss2-falcon",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             }
         ]
@@ -46,15 +70,27 @@
             {
                 "name": "mido",
                 "builds": [
-                    "pe1-mido",
-                    "pe2-mido"
+                    {
+                        "name": "pe1-mido",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "pe2-mido",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             },
             {
                 "name": "santoni",
                 "builds": [
-                    "pe1-santoni",
-                    "pe2-santoni"
+                    {
+                        "name": "pe1-santoni",
+                        "url": "./assets/builds/example.zip"
+                    },
+                    {
+                        "name": "pe2-santoni",
+                        "url": "./assets/builds/example.zip"
+                    }
                 ]
             }
         ]
