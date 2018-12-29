@@ -1,24 +1,5 @@
 [
     {
-        "romName": "LineageOS",
-        "path": "lineage",
-        "deviceData": [
-            {
-                "name": "mido",
-                "builds": [
-                    {
-                        "name": "lineage1-mido",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "lineage2-mido",
-                        "url": "./assets/builds/example.zip"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "romName": "BlissROMs",
         "path": "bliss",
         "deviceData": [
@@ -26,12 +7,8 @@
                 "name": "mido",
                 "builds": [
                     {
-                        "name": "bliss1-mido",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "bliss2-mido",
-                        "url": "./assets/builds/example.zip"
+                        "name": "Bliss-v11.3-Stable-mido-UNOFFICIAL-20181211-0726.zip",
+                        "url": "https://goo.gl/CuFKPu"
                     }
                 ]
             },
@@ -39,57 +16,8 @@
                 "name": "santoni",
                 "builds": [
                     {
-                        "name": "bliss1-santoni",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "bliss2-santoni",
-                        "url": "./assets/builds/example.zip"
-                    }
-                ]
-            },
-            {
-                "name": "falcon",
-                "builds": [
-                    {
-                        "name": "bliss1-falcon",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "bliss2-falcon",
-                        "url": "./assets/builds/example.zip"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "romName": "PixelExperience",
-        "path": "pe",
-        "deviceData": [
-            {
-                "name": "mido",
-                "builds": [
-                    {
-                        "name": "pe1-mido",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "pe2-mido",
-                        "url": "./assets/builds/example.zip"
-                    }
-                ]
-            },
-            {
-                "name": "santoni",
-                "builds": [
-                    {
-                        "name": "pe1-santoni",
-                        "url": "./assets/builds/example.zip"
-                    },
-                    {
-                        "name": "pe2-santoni",
-                        "url": "./assets/builds/example.zip"
+                        "name": "Bliss-v11.3-Stable-santoni-UNOFFICIAL-20181216-2154.zip",
+                        "url": "https://goo.gl/F2GAZC"
                     }
                 ]
             }
